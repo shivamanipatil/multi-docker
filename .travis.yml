@@ -3,7 +3,7 @@ services:
   - docker
   
 before_install:
-  - docker build -t shivamanipatl/react-test -f ./client/Dockerfile.dev ./client
+  - docker build -t shivamanipatil/react-test -f ./client/Dockerfile.dev ./client
   
 script:
   - docker run -e CI=true shivamanipatil/react-test npm test
