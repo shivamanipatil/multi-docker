@@ -6,7 +6,7 @@ before_install:
   - docker build -t shivamanipatl/react-test -f ./client/Dockerfile.dev ./client
   
 script:
-  - docker run -e CI=true USERNAME/react-test npm test
+  - docker run -e CI=true shivamanipatil/react-test npm test
   
 after_success:
   # Build the images
