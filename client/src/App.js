@@ -8,18 +8,16 @@ import OtherPage from "./otherpage";
 function App() {
   return (
     <Router>
-      <div>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <h1>Fib calculator</h1>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
         </header>
-      </div>
-      <div>
-        <Route exact path="/" component={Fib} />
-        <Route exact path="/otherpage" component={OtherPage} />
-      </div>
+        <div>
+          <Route exact path="/" component={Fib} />
+          <Route exact path="/otherpage" component={OtherPage} />
+        </div>
       </div>
     </Router>
   );
